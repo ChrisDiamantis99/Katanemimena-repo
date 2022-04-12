@@ -1,5 +1,16 @@
-public class Value extends MultimediaFile {
+public class Value{
 
-    MultimediaFile multimediaFile = new MultimediaFile();
+    private final MultimediaFile multimediaFile;
 
+    public Value(){
+       this.multimediaFile = new MultimediaFile();
+    }
+
+    public Value(MultimediaFile multimediaFile){
+       this.multimediaFile = multimediaFile;
+    }
+
+    public MultimediaFile getMultimediaFile() {
+        return this.multimediaFile;
+    }
 }
